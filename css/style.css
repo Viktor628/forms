@@ -1,0 +1,645 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto",Helvetica,sans-serif;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 990px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #1f222c;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    padding-top: 50px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: 700;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom:  1px solid #ccc;
+}
+
+.simple {
+    width: 33%;
+}
+
+.simple label>input,
+.simple label>textarea {
+    padding-left: 16px;
+    width: 100%;
+}
+
+.simple p {
+    margin: 10px 0;
+}
+
+.name input,
+.mail input,
+.message textarea {
+    padding: 11px 0;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+}
+
+label input:focus {
+    outline: none;
+    border: 1px solid #3e6aff;
+}
+
+select {
+    padding: 11px 16px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    appearance: none;
+    background-image: url(../img/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position-x: 97%;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+
+select:focus {
+    outline: none;
+    border: 1px solid #3e6aff;
+}
+
+textarea {
+    max-width: 330px;
+    min-height: 130px;
+    max-height: 300px;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #3e6aff;
+}
+
+p.register {
+    width: 100%;
+}
+
+.register input {
+    padding: 12px 0;
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    background-color: #12d661;
+}
+
+h4 {
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+}
+
+.fixed {
+    width: 310px;
+}
+
+.fixed_style {
+    border-radius: 5px;
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.15));
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+}
+
+h5 {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 4%;
+}
+
+.login input {
+    margin-top: 25px;
+}
+
+.login input,
+.password input {
+    margin-left: 25px;
+    padding: 9px 0;
+    width: 84%;
+    position: relative;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.login label {
+    position: absolute;
+    top: 16px;
+    left: 8%;
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+}
+
+.password {
+    margin-top: 35px;
+}
+
+.password label {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+}
+
+h3 {
+    margin: 0;
+    padding-left: 25px;
+    font-size: 13px;
+    color: #3e6aff;
+    font-weight: 400;
+}
+
+.password_style input {
+    margin-left: 25px;
+}
+
+.password_style label {
+    padding-left: 16px;
+    font-size: 13px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+.enter input {
+    margin-left: 25px;
+    padding: 12.5px 0;
+    width: 84%;
+    border-radius: 3px;
+    border: none;
+    background-color: #12d661;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.enter input:hover {
+    filter: drop-shadow(0px 2px 2.5px rgba(8, 118, 52, 0.35));
+    background-color: #07be51;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #3e6aff;
+}
+
+.elements {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.delivery {
+    width: 15%;
+}
+
+.delivery label {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+.pickup label,
+.regeive label {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+}
+
+.terms {
+    width: 35%;
+}
+
+.terms label {
+    padding-left: 30px;
+}
+
+.contract label,
+.agreed label {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+input[type=checkbox] {
+    opacity: 0;
+}
+
+label {
+    position: relative;
+}
+
+.fixed input[type=checkbox]+label::before {
+    left: -15px;
+}
+
+.fixed input[type=checkbox]:checked+label::after {
+    left: -10px;
+}
+
+input[type=checkbox]+label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+input[type=checkbox]:checked+label::before {
+    border-color: #244dd7;
+}
+
+input[type=checkbox]:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 7px;
+    height: 4px;
+    border: 2px solid #244dd7;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+
+.status {
+    width: 48%;
+}
+
+.status form {
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.status span {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 700;
+}
+
+.status form:focus {
+    outline: none;
+    border: 1px solid #3e6aff;
+}
+
+.offer label {
+    padding-left: 28px;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+.date label {
+    margin: 0 35px 0 15px;
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 700;
+}
+
+.date input {
+    padding: 10px 21px;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+.stylized {
+    display: flex;
+    column-gap: 33%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.avatar p {
+    padding: 30px 0;
+}
+
+.avatar input[type=radio] {
+    opacity: 0;
+}
+
+.avatar label {
+    margin-left: 65px;
+    position: relative;
+    font-size: 16px;
+    color: #1f222c;
+    font-weight: 700;
+}
+
+.man label:focus {
+    color: #3e6aff;
+}
+
+.woman label:focus {
+    color: #3e6aff;
+}
+
+.man input[type=radio]+label::before,
+.woman input[type=radio]+label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -87px;
+    width: 71px;
+    height: 71px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position-x: 15px;
+    background-position-y: 8px;
+    border: 2px solid transparent;
+}
+
+.man input[type=radio]+label::before {
+    background-image: url(../img/avatar-man-1.jpg);
+}
+
+
+.man input[type=radio]:checked+label::before {
+    background-image: url(../img/avatar-man-2.jpg);
+    border: 2px solid #3e6aff;
+}
+
+.man input[type=radio]:checked+label,
+.woman input[type=radio]:checked+label {
+    color: #3e6aff;
+}
+
+.woman input[type=radio]+label::before {
+    background-image: url(../img/avatar-woman-1.jpg);
+}
+
+.woman input[type=radio]:checked+label::before {
+    background-image: url(../img/avatar-woman-2.jpg);
+    border: 2px solid #3e6aff;
+}
+
+.boxing {
+    padding-top: 50px;
+}
+
+.boxing label {
+    position: relative;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+.boxing input[type=checkbox]+label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -65px;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 25px;
+    border-radius: 12px;
+    background-color: #cfcfd1;
+}
+
+.boxing input[type=checkbox]+label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -62px;
+    transform: translateY(-50%);
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.boxing input[type=checkbox]:checked+label::before {
+    background-color: #244dd7;
+}
+
+.boxing input[type=checkbox]:checked+label::after {
+    background-color: #fff;
+    left: -43px;
+}
+
+td {
+    padding: 5px 0;
+}
+
+.fields {
+    padding-bottom: 50px;
+    width: 50%;
+}
+
+
+.fields label {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+.fields p {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+.left {
+    width: 100%;
+}
+
+.right input {
+    padding-left: 16px;
+    width: 100%;
+}
+
+td input {
+    padding: 11px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.file input {
+    display: none;
+}
+
+input[type=file]+label {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12.5px 37px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #3e6aff;
+}
+
+input[type=file]+label:hover {
+    filter: drop-shadow(0px 2px 2.5px rgba(15,40,126,0.35));
+    background-color: #2857f4;
+}
+
+input[type=submit] {
+    width: 100%;
+    border-radius: 3px;
+    background-color: #12d661;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+}
+
+input[type=submit]:hover {
+    filter: drop-shadow(0px 2px 2.5px rgba(8, 118, 52, 0.35));
+    background-color: #07be51;
+}
+
+input[type=reset] {
+    background-color: #fff;
+    font-size: 14px;
+    color: #6e6f77;
+    font-weight: 700;
+}
+
+input[type=reset]:hover {
+    background-color: #85868d;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fields textarea {
+    margin-top: 20px;
+    padding: 11px 0 0 16px;
+    min-width: 330px;
+    font-size: 14px;
+    color: #b3b3b3;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-weight: 400;
+}
+
+.comments label {
+    top: -37px;
+}
+
+.table_form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.applications {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.applications p {
+    position: relative;
+}
+
+.applications label {
+    position: absolute;
+    left: 0;
+    transform: translateY(-130%);
+}
+
+.applications td input {
+    width: 100%;
+}
+
+input[type=text] {
+    padding-left: 16px;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+.applications td {
+    padding-right: 10px;
+}
+
+.applications td:last-child {
+    padding: 0;
+} 
+
+.rules label {
+    padding-left: 30px;
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+}
+
+.payments p {
+    padding-bottom: 30px;
+}
+
+.rules input[type=checkbox]+label::before {
+    left: 0;
+}
+
+.rules input[type=checkbox]:checked+label::after {
+    left: 5px;
+}
+
+.payments td {
+    border-bottom: 1px solid #ccc;
+}
+
+.return p {
+    width: 55.5%;
+}
+
+.purchase p {
+    width: 27.6%;
+    right: -72.5%;
+}
+
+.send p {
+    padding: 25px 0;
+}
+
